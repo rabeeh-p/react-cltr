@@ -3,20 +3,22 @@ import { Link } from 'react-router-dom';
 
 function Header() {
 
-    let sample ='hello this is sample'
   return (
     <div style={{backgroundColor : 'yellow', height:'90px',display:'flex',justifyContent: 'space-between', alignItems: 'center', padding: '0 16px' }}>
       <Link to='/'>
-      
-      <h2>header</h2>
+        <h2>header</h2>
       </Link>
 
       <Link to='/task' >
-        <h2 >Task</h2>
+        <h2 >Calculator</h2>
       </Link>
 
       <Link to='/pending'>
-      <h2>Pending</h2>
+        <h2>Todo </h2>
+      </Link>
+
+      <Link to='/data'>
+        <h2>Data Fetcher </h2>
       </Link>
     </div>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 function Task() {
   return (
     <div>
-        <h1>task page</h1>
+        <h1>calculator page</h1>
       
     </div>
   )
