@@ -32,7 +32,7 @@ function DataFetcher() {
       ) : (
         <ul>
           {data.slice(0, 10).map(item => (
-            <li key={item.id}>{item.title}</li> // Displaying first 10 items
+            <li key={item.id}>{item.title}</li> 
           ))}
         </ul>
       )}

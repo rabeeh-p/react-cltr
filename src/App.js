@@ -9,6 +9,7 @@ import './app.css'
 import Task from './components/Task';
 import Pending from './components/Pending';
 import DataFetcher from './components/DataFetcher';
+import Counter from './components/Counter';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Route path='/task' element={<Task/>} />
       <Route path='/pending' element={<Pending/>} />
       <Route path='/data' element={<DataFetcher/>} />
+      <Route path='/counter' element={<Counter/>} />
 
       
     

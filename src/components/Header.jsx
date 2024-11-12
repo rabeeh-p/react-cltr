@@ -20,6 +20,10 @@ function Header() {
       <Link to='/data'>
         <h2>Data Fetcher </h2>
       </Link>
+
+      <Link to='/counter'>
+        <h2>Counter </h2>
+      </Link>
     </div>
   )
 }
