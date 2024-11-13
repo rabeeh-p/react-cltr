@@ -10,13 +10,13 @@ import Task from './components/Task';
 import Pending from './components/Pending';
 import DataFetcher from './components/DataFetcher';
 import Counter from './components/Counter';
-
+import Hello from './components/Hello';
+import Counter2 from './components/Counter2';
+ 
 
 function App() {
 
 
-
-  
 
   return (
     <>
@@ -30,6 +30,8 @@ function App() {
       <Route path='/pending' element={<Pending/>} />
       <Route path='/data' element={<DataFetcher/>} />
       <Route path='/counter' element={<Counter/>} />
+      <Route path='/hello' element={<Hello/>} />
+      <Route path='/counter2' element={<Counter2/>} />
 
       
     
