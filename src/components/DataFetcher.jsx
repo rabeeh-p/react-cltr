@@ -24,8 +24,6 @@ function DataFetcher() {
     fetchData();
   }, []);
 
-
-
   
   return (
     <div>

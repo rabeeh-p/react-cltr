@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 const Counter2 = () => {
     let [count,setCount] =useState(0)
 
+
+    
     let decrease = ()=>{
         if (count === 0){
             return
