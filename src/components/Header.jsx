@@ -24,6 +24,10 @@ function Header() {
       <Link to='/counter'>
         <h2>Counter </h2>
       </Link>
+
+      <Link to='/callback'>
+        <h2>Callback page </h2>
+      </Link>
     </div>
   )
 }

@@ -12,6 +12,7 @@ import DataFetcher from './components/DataFetcher';
 import Counter from './components/Counter';
 import Hello from './components/Hello';
 import Counter2 from './components/Counter2';
+import Callback from './components/workout/Callback';
  
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Route path='/counter' element={<Counter/>} />
       <Route path='/hello' element={<Hello/>} />
       <Route path='/counter2' element={<Counter2/>} />
+      <Route path='/callback' element={<Callback/>} />
 
       
     
