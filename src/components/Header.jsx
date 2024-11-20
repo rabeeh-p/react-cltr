@@ -28,6 +28,9 @@ function Header() {
       <Link to='/callback'>
         <h2>Callback page </h2>
       </Link>
+      <Link to='/memo'>
+        <h2>Memo page </h2>
+      </Link>
     </div>
   )
 }

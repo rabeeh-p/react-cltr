@@ -1,14 +1,14 @@
 import React, { useCallback, useState } from 'react'
 
-// function Child({ handleClick }) {
-//     console.log("Child re-rendered");
-//     return <button onClick={handleClick}>Click me</button>;
-//   }
-
-const Child = React.memo(({ handleClick }) => {
+function Child({ handleClick }) {
     console.log("Child re-rendered");
     return <button onClick={handleClick}>Click me</button>;
-});
+  }
+
+// const Child = React.memo(({ handleClick }) => {
+//     console.log("Child re-rendered");
+//     return <button onClick={handleClick}>Click me</button>;
+// });
 
 const Callback = () => {
     const [count, setCount] = useState(0);

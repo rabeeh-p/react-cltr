@@ -13,6 +13,7 @@ import Counter from './components/Counter';
 import Hello from './components/Hello';
 import Counter2 from './components/Counter2';
 import Callback from './components/workout/Callback';
+import Memo from './components/workout/Memo';
  
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <Route path='/hello' element={<Hello/>} />
       <Route path='/counter2' element={<Counter2/>} />
       <Route path='/callback' element={<Callback/>} />
+      <Route path='/memo' element={<Memo/>} />
 
       
     
