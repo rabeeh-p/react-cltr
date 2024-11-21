@@ -17,13 +17,16 @@ const Callback = () => {
 
   const handleClick = useCallback(() => {
     setCount(count + 1);
-  }, [count]);
+  }, [count,sampel]);
+
+
   return (
     <div>
       <h1>hello</h1>
       <Child handleClick={handleClick} />
-      <p>Count: {count}</p>
 
+
+      <p>Count: {count}</p>
       <h1>{sampel}</h1>
       <button onClick={()=>setSample(sampel+1)}>increse</button>
     </div>
@@ -31,3 +34,6 @@ const Callback = () => {
 }
 
 export default Callback
+
+
+

@@ -31,6 +31,10 @@ function Header() {
       <Link to='/memo'>
         <h2>Memo page </h2>
       </Link>
+
+      <Link to='/reactmemo'>
+        <h2>React Memo page </h2>
+      </Link>
     </div>
   )
 }

@@ -1,8 +1,13 @@
-import React, { useMemo, useState } from 'react'
+import React, { useContext, useMemo, useState } from 'react'
+import {sampleContext} from './ContextApi';
 
 const Memo = () => {
     const [count, setCount] = useState(0);
     const [sample, setSample] = useState(0);
+
+    const{hai,setHai} = useContext(sampleContext)
+    console.log(hai,'looo');
+    
     
     const expensiveValue = useMemo(() => {
         console.log('Expensive calculation');

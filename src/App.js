@@ -14,6 +14,8 @@ import Hello from './components/Hello';
 import Counter2 from './components/Counter2';
 import Callback from './components/workout/Callback';
 import Memo from './components/workout/Memo';
+import ReactMemo from './components/workout/ReactMemo';
+import ContextApi from './components/workout/ContextApi';
  
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
     <Router>
 
     <Header/>
+      <ContextApi>
     <Routes>
       <Route path='/' element={<Body/>}/>
       <Route path='/task' element={<Task/>} />
@@ -36,10 +39,12 @@ function App() {
       <Route path='/counter2' element={<Counter2/>} />
       <Route path='/callback' element={<Callback/>} />
       <Route path='/memo' element={<Memo/>} />
+      <Route path='/reactmemo' element={<ReactMemo/>} />
 
       
     
     </Routes>
+      </ContextApi>
     <Footer/>
     </Router>
 
