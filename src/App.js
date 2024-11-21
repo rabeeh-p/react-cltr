@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 // import {useState} from 'react'
 import Header from './components/Header';
 import Body from './components/Body';
@@ -17,7 +17,7 @@ import Memo from './components/workout/Memo';
 import ReactMemo from './components/workout/ReactMemo';
 import ContextApi from './components/workout/ContextApi';
 import Reducer from './components/workout/Reducer';
- 
+const Lazy = React.lazy(() => import('./components/workout/Lazy'));
 
 function App() {
 
@@ -30,6 +30,7 @@ function App() {
 
     <Header/>
       <ContextApi>
+      <Suspense fallback={<div>Loading...</div>}>
     <Routes>
       <Route path='/' element={<Body/>}/>
       <Route path='/task' element={<Task/>} />
@@ -43,9 +44,13 @@ function App() {
       <Route path='/reactmemo' element={<ReactMemo/>} />
       <Route path='/reducer' element={<Reducer/>} />
 
+      <Route path='/lazy' element={<Lazy />} />
+        
+
       
     
     </Routes>
+      </Suspense>
       </ContextApi>
     <Footer/>
     </Router>

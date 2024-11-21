@@ -39,6 +39,10 @@ function Header() {
       <Link to='/reducer'>
         <h2>Reducer  page </h2>
       </Link>
+
+      <Link to='/lazy'>
+        <h2>Lazy  page </h2>
+      </Link>
     </div>
   )
 }
