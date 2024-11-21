@@ -16,6 +16,7 @@ import Callback from './components/workout/Callback';
 import Memo from './components/workout/Memo';
 import ReactMemo from './components/workout/ReactMemo';
 import ContextApi from './components/workout/ContextApi';
+import Reducer from './components/workout/Reducer';
  
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Route path='/callback' element={<Callback/>} />
       <Route path='/memo' element={<Memo/>} />
       <Route path='/reactmemo' element={<ReactMemo/>} />
+      <Route path='/reducer' element={<Reducer/>} />
 
       
     
