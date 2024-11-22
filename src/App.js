@@ -17,6 +17,7 @@ import Memo from './components/workout/Memo';
 import ReactMemo from './components/workout/ReactMemo';
 import ContextApi from './components/workout/ContextApi';
 import Reducer from './components/workout/Reducer';
+import AutoComplete from './components/workout/AutoComplete';
 const Lazy = React.lazy(() => import('./components/workout/Lazy'));
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Route path='/reducer' element={<Reducer/>} />
 
       <Route path='/lazy' element={<Lazy />} />
+      <Route path='/autocomplete' element={<AutoComplete />} />
         
 
       

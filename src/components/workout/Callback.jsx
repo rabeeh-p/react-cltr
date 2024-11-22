@@ -17,7 +17,7 @@ const Callback = () => {
 
   const handleClick = useCallback(() => {
     setCount(count + 1);
-  }, [count,sampel]);
+  }, [count]);
 
 
   return (

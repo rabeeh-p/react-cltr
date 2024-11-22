@@ -16,7 +16,7 @@ const Memo = () => {
 
     const hello =()=>{
         console.log('hello is worked');
-        
+         
     }
     hello()
   return (

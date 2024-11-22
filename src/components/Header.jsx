@@ -43,6 +43,9 @@ function Header() {
       <Link to='/lazy'>
         <h2>Lazy  page </h2>
       </Link>
+      <Link to='/autocomplete'>
+        <h2>auto  page </h2>
+      </Link>
     </div>
   )
 }
