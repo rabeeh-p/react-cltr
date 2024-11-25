@@ -17,7 +17,7 @@ const AutoComplete = () => {
         const result = listItems.filter((item) =>
         item.toLowerCase().includes(input)
       );
-      setSuggest(result); // Update suggestions
+      setSuggest(result); 
     } else {
       setSuggest([]); 
     }
