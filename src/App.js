@@ -17,7 +17,10 @@ import Memo from './components/workout/Memo';
 import ReactMemo from './components/workout/ReactMemo';
 import ContextApi from './components/workout/ContextApi';
 import Reducer from './components/workout/Reducer';
+import Reducer2 from './components/second/Reducer';
 import AutoComplete from './components/workout/AutoComplete';
+import UseCallback from './components/second/UseCallback';
+import Suggestions from './components/second/Suggestions';
 const Lazy = React.lazy(() => import('./components/workout/Lazy'));
 
 function App() {
@@ -33,6 +36,8 @@ function App() {
       <ContextApi>
       <Suspense fallback={<div>Loading...</div>}>
     <Routes>
+
+      
       <Route path='/' element={<Body/>}/>
       <Route path='/task' element={<Task/>} />
       <Route path='/pending' element={<Pending/>} />
@@ -47,10 +52,10 @@ function App() {
 
       <Route path='/lazy' element={<Lazy />} />
       <Route path='/autocomplete' element={<AutoComplete />} />
-        
+      <Route path='/usecallback' element={<UseCallback />} />
+      <Route path='/suggestion' element={<Suggestions />} />
+      <Route path='/reducer-page' element={<Reducer2 />} />
 
-      
-    
     </Routes>
       </Suspense>
       </ContextApi>

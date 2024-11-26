@@ -10,8 +10,6 @@ const AutoComplete = () => {
     const input = e.target.value.toLowerCase();
     setInputValue(input); 
 
-
-
     if (input) {
 
         const result = listItems.filter((item) =>
