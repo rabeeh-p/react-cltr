@@ -26,9 +26,9 @@ const UseCallback = () => {
 
   const calbackSample = useCallback(()=>{
     console.log('is working call back2');
-    setSample(sample+1)
+    setSample((pre)=>pre+1)
     
-  },[sample])
+  },[])
   const Callback2 = ()=>{
     setName('aju')
 
