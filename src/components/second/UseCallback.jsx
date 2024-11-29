@@ -31,7 +31,6 @@ const UseCallback = () => {
   },[])
   const Callback2 = ()=>{
     setName('aju')
-
   }
 
  

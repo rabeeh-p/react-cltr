@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 const AutoComplete = () => {
-  const [suggest, setSuggest] = useState([]); // State to store suggestions
-  const [inputValue, setInputValue] = useState(''); // State to store input value
+  const [suggest, setSuggest] = useState([]); 
+  const [inputValue, setInputValue] = useState(''); 
 
   const listItems = ['hello', 'hai', 'good', 'help', 'halo', 'growth'];
 
