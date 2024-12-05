@@ -21,6 +21,8 @@ import Reducer2 from './components/second/Reducer';
 import AutoComplete from './components/workout/AutoComplete';
 import UseCallback from './components/second/UseCallback';
 import Suggestions from './components/second/Suggestions';
+import Sample from './REDUCER/Sample';
+import Header2 from './REDUCER/Header2';
 const Lazy = React.lazy(() => import('./components/workout/Lazy'));
 
 function App() {
@@ -32,9 +34,10 @@ function App() {
     
     <Router>
 
-    <Header/>
-      <ContextApi>
-      <Suspense fallback={<div>Loading...</div>}>
+    {/* <Header/> */}
+    <Header2/>
+      {/* <ContextApi> */}
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
     <Routes>
 
 
@@ -43,8 +46,8 @@ function App() {
 
 
       
-      <Route path='/' element={<Body/>}/>
-      <Route path='/task' element={<Task/>} />
+      {/* <Route path='/' element={<Body/>}/> */}
+      {/* <Route path='/task' element={<Task/>} />
       <Route path='/pending' element={<Pending/>} />
       <Route path='/data' element={<DataFetcher/>} />
       <Route path='/counter' element={<Counter/>} />
@@ -59,11 +62,19 @@ function App() {
       <Route path='/autocomplete' element={<AutoComplete />} />
       <Route path='/usecallback' element={<UseCallback />} />
       <Route path='/suggestion' element={<Suggestions />} />
-      <Route path='/reducer-page' element={<Reducer2 />} />
+      <Route path='/reducer-page' element={<Reducer2 />} /> */}
+      
+      
+      
+      
+      <Route path='/' element={<Sample />} /> 
+
+
+
 
     </Routes>
-      </Suspense>
-      </ContextApi>
+      {/* </Suspense>
+      </ContextApi> */}
     <Footer/>
     </Router>
 

@@ -9,10 +9,10 @@ const Memo = () => {
     console.log(hai,'looo');
     
     
-    const expensiveValue = useMemo(() => {
-        console.log('Expensive calculation');
-        return count * 2;
-      }, [count]);
+    // const expensiveValue = useMemo(() => {
+    //     console.log('Expensive calculation');
+    //     return count * 2;
+    //   }, [count]);
 
     const hello =()=>{
         console.log('hello is worked');
@@ -22,7 +22,7 @@ const Memo = () => {
   return (
     <div>
         <h1>memo</h1>
-        <p>Expensive Value: {expensiveValue}</p>
+        {/* <p>Expensive Value: {expensiveValue}</p> */}
       <button onClick={() => setCount(count + 1)}>Increment</button>
         <p>Expensive Value: {sample}</p>
       <button onClick={() => setSample(sample + 1)}>Increment</button>
