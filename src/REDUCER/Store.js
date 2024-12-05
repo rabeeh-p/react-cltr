@@ -1,70 +1,36 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
-// Create a slice
-const counterSlice = createSlice({
-  name: 'counter',
-  initialState: { count: 0 },
-  reducers: {
-    increment: (state) => { state.count += 1; },
-    decrement: (state) => { state.count -= 1; },
-  },
-});
 
-const colorSlice = createSlice({
-    name: 'color',
-    initialState: { backgroundColor: 'red' }, // Initial color
-    reducers: {
-      toggleColor: (state) => {
-        state.backgroundColor = state.backgroundColor === 'red' ? 'green' : 'red';
-      },
-    },
-  });
-
-  export const { toggleColor } = colorSlice.actions;
-
-
-// Export actions
-export const { increment, decrement } = counterSlice.actions;
-
-
-const newColor = createSlice({
-  name: 'newColor',
-  initialState: {color:'red'},
+const count = createSlice({
+  name:'counter',
+  initialState:{count:1},
   reducers:{
-    setBlack : (state)=>{state.color = 'black'},
-    setYellow : (state)=>{state.color = 'yellow'}
+    increament:(state)=> {state.count += 1}
   }
 })
 
-export const {setBlack,setYellow} = newColor.actions
+export const {increament} = count.actions
 
 
-
-const rabeeh = createSlice({
-  name: 'hek',
-  initialState: {value:1},
+const color = createSlice({
+  name:'color',
+  initialState: {backgroundColor: 'red'},
   reducers:{
-    plus: (state)=>{state.value += 1}
+    setYello: (state)=>{state.backgroundColor = 'yellow'},
+    setGreen: (state)=>{state.backgroundColor = 'green'}
   }
 })
-console.log(rabeeh.actions,'actionsssssss');
 
-
-export const {plus} = rabeeh.actions
-
-
-
-
+export const {setGreen,setYello} = color.actions
 
 
 // Create store
 const store = configureStore({
   reducer: {
+    count:count.reducer,
+    color: color.reducer
 
-    counter: counterSlice.reducer, 
-    color: colorSlice.reducer,
-    txtColor: newColor.reducer,
-    newValue: rabeeh.reducer
+    
   },
 });
 
