@@ -23,6 +23,7 @@ import UseCallback from './components/second/UseCallback';
 import Suggestions from './components/second/Suggestions';
 import Sample from './REDUCER/Sample';
 import Header2 from './REDUCER/Header2';
+import Context from './REDUCER/Context';
 const Lazy = React.lazy(() => import('./components/workout/Lazy'));
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
     <Header2/>
       {/* <ContextApi> */}
       {/* <Suspense fallback={<div>Loading...</div>}> */}
+      {/* <Context> */}
     <Routes>
 
 
@@ -65,14 +67,15 @@ function App() {
       <Route path='/reducer-page' element={<Reducer2 />} /> */}
       
       
-      
-      
+
       <Route path='/' element={<Sample />} /> 
+      
 
 
 
 
     </Routes>
+      {/* </Context> */}
       {/* </Suspense>
       </ContextApi> */}
     <Footer/>
