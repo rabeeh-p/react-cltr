@@ -25,7 +25,7 @@ const Sample = () => {
 
       <button onClick={()=>dispatch(setYello())}>change the color</button>
       
-    </div>
+    </div> 
   )
 }
 

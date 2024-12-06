@@ -8,9 +8,12 @@ const ContextApi = ({children}) => {
       {children}
     </sampleContext.Provider>
     
+    
   )
 }
 
+
 export default ContextApi
+
 
 
