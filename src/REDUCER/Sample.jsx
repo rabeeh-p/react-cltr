@@ -1,6 +1,6 @@
 import React, { useContext, useReducer } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { increament } from './Store';
+import { increament, setYellow } from './Store';
 import { sampleContext } from '../REDUCER/Context'; // Ensure the path is correct
 
 const Sample = () => {
@@ -21,6 +21,9 @@ const reducer1= (state,action)=>{
 }
   const [value1, setValue] = useReducer(reducer1,initialValue,)
 
+
+  const backgroundColor= useSelector((state)=>state.color.backgroundColor)
+
   return (
     <div>
       <h1>hello sample page {count}</h1>
@@ -30,6 +33,9 @@ const reducer1= (state,action)=>{
 
       <h1>the value{value1}</h1>
       <button onClick={()=>setValue('increment')}>inc</button>
+
+      <div style={{backgroundColor}}> hello</div>
+      <button onClick={()=>dispatch(setYellow())}>change the color</button>
     </div>
   );
 };

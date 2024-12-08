@@ -8,12 +8,30 @@ const count = createSlice({
   }
 })
 
+
+const color = createSlice({
+  name:'colors',
+  initialState:{backgroundColor: 'red'},
+  reducers:{
+    setYellow: (state)=>{state.backgroundColor = 'yellow'}
+  }
+})
+
+export const {setYellow} = color.actions
+
+
+
+
+
+
+
 export const {increament} =count.actions
 
 // Create store
 const store = configureStore({
   reducer:{
-    count:count.reducer
+    count:count.reducer,
+    color:color.reducer,
   }
   
 });
