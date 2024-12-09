@@ -18,6 +18,8 @@ const Memo = () => {
         console.log('hello is worked');
          
     }
+
+    
     hello()
   return (
     <div>
