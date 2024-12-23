@@ -2,10 +2,10 @@ import React, { useContext, useMemo, useState } from 'react'
 import {sampleContext} from './ContextApi';
 
 const Memo = () => {
-    const [count, setCount] = useState(0);
+    // const [count, setCount] = useState(0);
     const [sample, setSample] = useState(0);
 
-    const{hai,setHai} = useContext(sampleContext)
+    const{hai,setHai,count,setCount} = useContext(sampleContext)
     console.log(hai,'looo');
     
     
@@ -24,8 +24,9 @@ const Memo = () => {
   return (
     <div>
         <h1>memo</h1>
+        <h2>{count}</h2>
         {/* <p>Expensive Value: {expensiveValue}</p> */}
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count + 1)}>Increment2</button>
         <p>Expensive Value: {sample}</p>
       <button onClick={() => setSample(sample + 1)}>Increment</button>
       
