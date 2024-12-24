@@ -21,3 +21,5 @@ const Counter2 = () => {
 }
 
 export default Counter2
+
+
