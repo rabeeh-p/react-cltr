@@ -9,6 +9,10 @@ const Counter2 = () => {
         if (count === 0){
             return
         }
+
+
+
+        
         setCount(count - 1)
     }
   return (
