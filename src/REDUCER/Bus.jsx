@@ -1,26 +1,20 @@
 import React, { useState } from 'react';
-import './bus.css'; // Add styles for the bus UI
+import './bus.css'; 
 
 const Bus = () => {
-  // Define rows and columns for the bus seats
-  const rows = 5; // Number of rows
-  const columns = 4; // Number of columns (2 on each side of the aisle)
+  const rows = 5;  
+  const columns = 4;  
 
-  // State to track selected seats
   const [selectedSeats, setSelectedSeats] = useState([]);
 
-  // Handle seat click
   const toggleSeatSelection = (seatNumber) => {
     if (selectedSeats.includes(seatNumber)) {
-      // Remove the seat from the selection if already selected
       setSelectedSeats(selectedSeats.filter((seat) => seat !== seatNumber));
     } else {
-      // Add the seat to the selection if not already selected
       setSelectedSeats([...selectedSeats, seatNumber]);
     }
   };
 
-  // Generate seat layout
   const renderSeats = () => {
     const seats = [];
     let seatNumber = 1;
@@ -29,7 +23,7 @@ const Bus = () => {
       const rowSeats = [];
 
       for (let col = 0; col < columns; col++) {
-        const isAisle = col === 2; // Add an aisle after the second column
+        const isAisle = col === 2;  
         if (isAisle) {
           rowSeats.push(
             <div key={`aisle-${row}-${col}`} className="aisle"></div>
@@ -47,6 +41,12 @@ const Bus = () => {
           seatNumber++;
         }
       }
+
+
+
+
+
+
 
       seats.push(
         <div key={`row-${row}`} className="row">
@@ -77,6 +77,4 @@ const Bus = () => {
 
 export default Bus;
 
-// Example CSS in 'Bus.css':
-/* Bus.css */
 
