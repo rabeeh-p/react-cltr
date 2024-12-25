@@ -2,6 +2,7 @@ import React, { useContext, useReducer } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { increament, setYellow } from './Store';
 import { sampleContext } from '../REDUCER/Context'; // Ensure the path is correct
+import Bus from './Bus';
 
 const Sample = () => {
   const count = useSelector((state) => state.count.count);
@@ -36,6 +37,7 @@ const reducer1= (state,action)=>{
 
       <div style={{backgroundColor}}> hello</div>
       <button onClick={()=>dispatch(setYellow())}>change the color</button>
+
     </div>
   );
 };

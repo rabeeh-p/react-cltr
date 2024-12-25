@@ -23,7 +23,7 @@ const Counter2 = () => {
       <button onClick={()=>setCount(count+1)}>increse</button>
       <button onClick={decrease}>decrease</button>
 
-      <h2>{naem}</h2>
+      <h2>{name}</h2>
       <button onClick={handleChange}>change the name</button>
     </div>
   )

@@ -24,6 +24,7 @@ import Suggestions from './components/second/Suggestions';
 import Sample from './REDUCER/Sample';
 import Header2 from './REDUCER/Header2';
 import Context from './REDUCER/Context';
+import Bus from './REDUCER/Bus';
 const Lazy = React.lazy(() => import('./components/workout/Lazy'));
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
       
 
       <Route path='/' element={<Sample />} /> 
+      <Route path='/bus' element={<Bus />} /> 
       
 
 
