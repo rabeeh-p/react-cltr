@@ -11,7 +11,6 @@ const AutoComplete = () => {
     setInputValue(input); 
 
     if (input) {
-
         const result = listItems.filter((item) =>
         item.toLowerCase().includes(input)
       );
@@ -22,8 +21,8 @@ const AutoComplete = () => {
   };
 
   const handleSelectSuggestion = (value) => {
-    setInputValue(value); // Set input value to the selected suggestion
-    setSuggest([]); // Clear suggestions
+    setInputValue(value);  
+    setSuggest([]);  
   };
 
   return (
@@ -39,10 +38,11 @@ const AutoComplete = () => {
         autoComplete="off"
       />
 
-      {/* Suggestions dropdown */}
+       
       {suggest.length > 0 && (
         <ul style={{ border: '1px solid #ccc', padding: '10px', width: '200px' }}>
           {suggest.map((item, index) => (
+
             <li
               key={index}
               style={{

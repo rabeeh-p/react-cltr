@@ -1,15 +1,15 @@
 import React, { useContext, useReducer } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { increament, setYellow } from './Store';
-import { sampleContext } from '../REDUCER/Context'; // Ensure the path is correct
+import { sampleContext } from '../REDUCER/Context';  t
 import Bus from './Bus';
 
 const Sample = () => {
   const count = useSelector((state) => state.count.count);
   const dispatch = useDispatch();
-  const { hello,name,setName } = useContext(sampleContext); // Accessing 'hello' from context
+  const { hello,name,setName } = useContext(sampleContext);  
 
-  console.log(hello, 'hello'); // 'hello' should be printed in console
+  console.log(hello, 'hello');  
 
 const initialValue = 1
 const reducer1= (state,action)=>{
