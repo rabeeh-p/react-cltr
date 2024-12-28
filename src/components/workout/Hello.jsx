@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Hello = () => {
+  cons[name,setName] = useState('aju')
   return (
     <div>
       <h1>hello page</h1>
