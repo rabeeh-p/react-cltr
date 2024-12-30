@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 const Counter2 = () => {
     let [count,setCount] =useState(0)
     let [name,setName] =useState('rabeeh')
-
-
     
     let decrease = ()=>{
         if (count === 0){
@@ -16,6 +14,8 @@ const Counter2 = () => {
     const handleChange = ()=>{
       setName('aju')
     }
+
+
     
   return (
     <div>

@@ -12,6 +12,8 @@ const Context = ({ children }) => {
   return (
     <sampleContext.Provider value={{ hello,name, setName,count, setCount }}>
       {children}
+      
+
     </sampleContext.Provider>
   );
 };
