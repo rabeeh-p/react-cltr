@@ -14,6 +14,7 @@ const Counter = () => {
       <div className="counter-display">
         <span>{count}</span>
       </div>
+      
       <div className="button-container">
         <button onClick={increaseButtonClicked} className="counter-button">Increase</button>
         <button onClick={()=>{
